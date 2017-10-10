@@ -1,0 +1,68 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/components/my-app/my-app.html",
+  "fragments": [
+    "src/components/my-view1/my-view1.html",
+    "src/components/my-view2/my-view2.html",
+    "src/components/my-view3/my-view3.html",
+    "src/components/my-view404/my-view404.html"
+  ],
+  "sources": [
+    "src/**/*",
+    "src/images/**/*",
+    "src/styles/**/*"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/*.js"
+  ],
+  "lint": {
+    "rules": ["polymer-2"]
+  },
+
+  "builds": [{
+    "name": "default",
+    "addServiceWorker": true,
+    "addPushManifest": true,
+    "insertPrefetchLinks": true,
+    "js": {
+      "compile": true,
+      "minify": true
+    },
+    "css": {"minify": true},
+    "html": {"minify": true}
+  }],
+
+  "config": {
+
+    "port": "8081",
+
+    "removeRoboto": false,
+
+    "autoprefixer": [
+      "ie >= 11",
+      "ie_mob >= 11",
+      "ff >= 30",
+      "chrome >= 34",
+      "safari >= 7",
+      "opera >= 23",
+      "ios >= 7",
+      "android >= 4.4",
+      "bb >= 10"
+    ],
+
+    "customIconsName": "my-icons",
+
+    "path": {
+      "srcElements": "src/components",
+
+      "srcGlobalSass": "src/sass",
+
+      "destGlobalCss": "src/styles",
+
+      "srcImages": "src/srcImages",
+
+      "destImages": "src/images"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": "build/default",
+    "rewrites": [
+      {
+        "source": "!/__/**",
+        "destination": "/index.html"
+      },
+      {
+        "source": "**/!(*.js|*.html|*.css|*.json|*.svg|*.png|*.jpg|*.jpeg|*.webp)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
