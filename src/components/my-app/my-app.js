@@ -22,7 +22,39 @@ export class MyApp extends PolymerElement {
 
   // Define a string template instead of a `<template>` element.
   static get template() {
-    return `<app-location route="{{route}}"></app-location>
+    return `
+    <style>
+      :host {
+        --app-primary-color: #4285f4;
+        --app-secondary-color: black;
+        display: block; }
+
+      app-drawer-layout:not([narrow]) [drawer-toggle] {
+        display: none; }
+
+      app-header {
+        color: #fff;
+        background-color: var(--app-primary-color); }
+
+      app-header paper-icon-button {
+        --paper-icon-button-ink-color: white; }
+
+      .drawer-list {
+        margin: 0 20px; }
+
+      .drawer-list a {
+        display: block;
+        padding: 0 16px;
+        line-height: 40px;
+        color: var(--app-secondary-color);
+        text-decoration: none; }
+
+      .drawer-list .iron-selected {
+        font-weight: bold;
+        color: black; }
+    </style>
+
+    <app-location route="{{route}}"></app-location>
             <app-route
                 route="{{route}}"
                 pattern="[[rootPattern]]:page"

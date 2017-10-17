@@ -4,7 +4,12 @@ import {Element as PolymerElement}
 export default class MyView404 extends PolymerElement {
   // Define a string template instead of a `<template>` element.
   static get template() {
-    return `Oops you hit a 404. <a href="[[rootPath]]">Head back to home.</a>`;
+    return `<style>
+      :host {
+        display: block;
+        padding: 10px 20px; }
+      </style>
+      Oops you hit a 404. <a href="[[rootPath]]">Head back to home.</a>`;
   }
 }
 
