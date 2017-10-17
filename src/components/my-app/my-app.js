@@ -13,6 +13,7 @@ import "../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js";
 
 // Views
 import "../my-view1/my-view1.js";
+import "../my-view2/my-view2.js";
 
 
 export class MyApp extends PolymerElement {
@@ -53,6 +54,7 @@ export class MyApp extends PolymerElement {
                     fallback-selection="view404"
                     role="main">
                   <my-view1 name="view1"></my-view1>
+                  <my-view2 name="view2"></my-view2>
                 </iron-pages>
               </app-header-layout>
             </app-drawer-layout>`;
