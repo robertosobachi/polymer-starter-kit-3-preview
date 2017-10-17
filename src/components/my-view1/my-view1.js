@@ -1,7 +1,7 @@
 import {Element as PolymerElement}
     from "../../../node_modules/@polymer/polymer/polymer-element.js";
 
-export class MyView1 extends PolymerElement {
+export default class MyView1 extends PolymerElement {
   // Define a string template instead of a `<template>` element.
   static get template() {
     return `<div class="card">

@@ -11,6 +11,8 @@ import "../../../node_modules/@polymer/iron-pages/iron-pages.js";
 import "../../../node_modules/@polymer/iron-selector/iron-selector.js";
 import "../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js";
 
+// Views
+import "../my-view1/my-view1.js";
 
 
 export class MyApp extends PolymerElement {
@@ -51,9 +53,6 @@ export class MyApp extends PolymerElement {
                     fallback-selection="view404"
                     role="main">
                   <my-view1 name="view1"></my-view1>
-                  <my-view2 name="view2"></my-view2>
-                  <my-view3 name="view3"></my-view3>
-                  <my-view404 name="view404"></my-view404>
                 </iron-pages>
               </app-header-layout>
             </app-drawer-layout>`;
