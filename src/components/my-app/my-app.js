@@ -7,7 +7,7 @@ import "../../../node_modules/@polymer/app-layout/app-scroll-effects/app-scroll-
 import "../../../node_modules/@polymer/app-layout/app-toolbar/app-toolbar.js";
 import "../../../node_modules/@polymer/app-route/app-location.js";
 import "../../../node_modules/@polymer/app-route/app-route.js";
-import "../../../bower_components/iron-lazy-pages/iron-pages.js";
+import "../../../node_modules/@polymer/iron-pages/iron-pages.js";
 import "../../../node_modules/@polymer/iron-selector/iron-selector.js";
 import "../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js";
 
