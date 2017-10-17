@@ -26,7 +26,7 @@ gulp.task('watch', () => {
              ['sass:lint', 'sass:styles', 'watch:reload']);
 
   // Watches for html file changes.
-  gulp.watch([config.path.srcElements + '/**/*.html'], ['watch:reload']);
+  gulp.watch([config.path.srcElements + '/**/*.js'], ['watch:reload']);
 
   gulp.watch([config.path.srcImages + '/**/*.png',
               config.path.srcImages + '/**/*.jpg',
