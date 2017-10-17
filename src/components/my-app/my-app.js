@@ -107,11 +107,11 @@ export class MyApp extends PolymerElement {
     // Load page import on demand. Show 404 page if fails
     var resolvedPageUrl =
         this.resolveUrl('../my-' + page + '/my-' + page + '.html');
-    Polymer.importHref(
-        resolvedPageUrl,
-        null,
-        this._showPage404.bind(this),
-        true);
+    // Polymer.importHref(
+    //     resolvedPageUrl,
+    //     null,
+    //     this._showPage404.bind(this),
+    //     true);
   }
 
   _showPage404() {
