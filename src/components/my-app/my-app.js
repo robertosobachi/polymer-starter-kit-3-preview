@@ -1,5 +1,17 @@
 import {Element as PolymerElement}
-    from "../../../node_modules/@polymer/polymer/polymer-element.js"
+    from "../../../node_modules/@polymer/polymer/polymer-element.js";
+import "../../../node_modules/@polymer/app-layout/app-drawer/app-drawer.js";
+import "../../../node_modules/@polymer/app-layout/app-drawer-layout/app-drawer-layout.js";
+import "../../../node_modules/@polymer/app-layout/app-header/app-header.js";
+import "../../../node_modules/@polymer/app-layout/app-scroll-effects/app-scroll-effects.js";
+import "../../../node_modules/@polymer/app-layout/app-toolbar/app-toolbar.js";
+import "../../../node_modules/@polymer/app-route/app-location.js";
+import "../../../node_modules/@polymer/app-route/app-route.js";
+import "../../../bower_components/iron-lazy-pages/iron-pages.js";
+import "../../../node_modules/@polymer/iron-selector/iron-selector.js";
+import "../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js";
+
+
 
 export class MyApp extends PolymerElement {
 
@@ -33,7 +45,7 @@ export class MyApp extends PolymerElement {
                   </app-toolbar>
                 </app-header>
 
-                <iron-lazy-pages
+                <iron-pages
                     selected="[[page]]"
                     attr-for-selected="name"
                     fallback-selection="view404"
@@ -42,7 +54,7 @@ export class MyApp extends PolymerElement {
                   <my-view2 name="view2"></my-view2>
                   <my-view3 name="view3"></my-view3>
                   <my-view404 name="view404"></my-view404>
-                </iron-lazy-pages>
+                </iron-pages>
               </app-header-layout>
             </app-drawer-layout>`;
   }
