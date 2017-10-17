@@ -1,11 +1,11 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/components/my-app/my-app.html",
+  "shell": "src/components/my-app/my-app.js",
   "fragments": [
-    "src/components/my-view1/my-view1.html",
-    "src/components/my-view2/my-view2.html",
-    "src/components/my-view3/my-view3.html",
-    "src/components/my-view404/my-view404.html"
+    "src/components/my-view1/my-view1.js",
+    "src/components/my-view2/my-view2.js",
+    "src/components/my-view3/my-view3.js",
+    "src/components/my-view404/my-view404.js"
   ],
   "sources": [
     "src/**/*",
@@ -14,7 +14,11 @@
   ],
   "extraDependencies": [
     "manifest.json",
-    "node_modules/@webcomponents/webcomponentsjs/*.js"
+    "node_modules/@webcomponents/webcomponentsjs/*.js",
+    "node_modules/@webcomponents/shadycss/entrypoints/*.js",
+    "node_modules/@webcomponents/shadycss/externs/*.js",
+    "node_modules/@webcomponents/shadycss/src/*.js",
+    "node_modules/@polymer/**/*.js"
   ],
   "lint": {
     "rules": ["polymer-2"]
