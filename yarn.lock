@@ -19,7 +19,7 @@
     "@polymer/iron-location" "^3.0.0-pre.1"
     "@polymer/polymer" "^3.0.0-pre.1"
 
-"@polymer/font-roboto@^0.0.3", "@polymer/font-roboto@^3.0.0-pre.1":
+"@polymer/font-roboto@3.0.0-pre.1", "@polymer/font-roboto@^3.0.0-pre.1":
   version "3.0.0-pre.1"
   resolved "https://registry.yarnpkg.com/@polymer/font-roboto/-/font-roboto-3.0.0-pre.1.tgz#3b989a3b7c7d7351d4d816f8136d708512b0bd10"
 
@@ -44,16 +44,7 @@
     "@polymer/iron-validatable-behavior" "^3.0.0-pre.1"
     "@polymer/polymer" "^3.0.0-pre.1"
 
-"@polymer/iron-demo-helpers@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@polymer/iron-demo-helpers/-/iron-demo-helpers-0.0.3.tgz#e8aed6665d2fa16b8b77d47d5bec78e74b6e7513"
-  dependencies:
-    "@polymer/marked-element" "^0.0.3"
-    "@polymer/paper-styles" "^0.0.3"
-    "@polymer/polymer" "^1.2.5-npm-test.2"
-    "@polymer/prism-element" "^0.0.3"
-
-"@polymer/iron-flex-layout@^0.0.3", "@polymer/iron-flex-layout@^3.0.0-pre.1":
+"@polymer/iron-flex-layout@3.0.0-pre.1", "@polymer/iron-flex-layout@^3.0.0-pre.1":
   version "3.0.0-pre.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-flex-layout/-/iron-flex-layout-3.0.0-pre.1.tgz#46738316b52fe2858bf4fb207176366b1657457f"
   dependencies:
@@ -80,6 +71,13 @@
     "@polymer/iron-meta" "^3.0.0-pre.1"
     "@polymer/polymer" "^3.0.0-pre.1"
 
+"@polymer/iron-lazy-pages@git+https://github.com/robertosobachi/iron-lazy-pages#5943dfb9b461fbb441e6326b9ed07373526212f3":
+  version "1.0.0"
+  resolved "git+https://github.com/robertosobachi/iron-lazy-pages#5943dfb9b461fbb441e6326b9ed07373526212f3"
+  dependencies:
+    "@polymer/iron-selector" "^3.0.0-pre.1"
+    "@polymer/polymer" "^3.0.0-pre.1"
+
 "@polymer/iron-location@^3.0.0-pre.1":
   version "3.0.0-pre.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-location/-/iron-location-3.0.0-pre.1.tgz#e2fb5f817729102fcb1838f14a67c7da57d939fe"
@@ -98,16 +96,15 @@
   dependencies:
     "@polymer/polymer" "^3.0.0-pre.1"
 
-"@polymer/iron-pages@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@polymer/iron-pages/-/iron-pages-0.0.3.tgz#c95429787b24c27d57bfece26564379b5769d473"
+"@polymer/iron-pages@^3.0.0-pre.1":
+  version "3.0.0-pre.1"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-pages/-/iron-pages-3.0.0-pre.1.tgz#a25c1b8f1b653d489b59a5aba967c7dfca4993dc"
   dependencies:
-    "@polymer/iron-demo-helpers" "^0.0.3"
-    "@polymer/iron-resizable-behavior" "^0.0.3"
-    "@polymer/iron-selector" "^0.0.3"
-    "@polymer/polymer" "^1.2.5-npm-test.2"
+    "@polymer/iron-resizable-behavior" "^3.0.0-pre.1"
+    "@polymer/iron-selector" "^3.0.0-pre.1"
+    "@polymer/polymer" "^3.0.0-pre.1"
 
-"@polymer/iron-resizable-behavior@^0.0.3", "@polymer/iron-resizable-behavior@^3.0.0-pre.1":
+"@polymer/iron-resizable-behavior@3.0.0-pre.1", "@polymer/iron-resizable-behavior@^3.0.0-pre.1":
   version "3.0.0-pre.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-resizable-behavior/-/iron-resizable-behavior-3.0.0-pre.1.tgz#1a6c0276329fdb41818c5e1356f9a8089cf3fbdb"
   dependencies:
@@ -119,7 +116,7 @@
   dependencies:
     "@polymer/polymer" "^3.0.0-pre.1"
 
-"@polymer/iron-selector@^0.0.3", "@polymer/iron-selector@^3.0.0-pre.1":
+"@polymer/iron-selector@3.0.0-pre.1", "@polymer/iron-selector@^3.0.0-pre.1":
   version "3.0.0-pre.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-selector/-/iron-selector-3.0.0-pre.1.tgz#e495c3f5ba5498ccfeccb94dded536d10807fb7c"
   dependencies:
@@ -131,13 +128,6 @@
   dependencies:
     "@polymer/iron-meta" "^3.0.0-pre.1"
     "@polymer/polymer" "^3.0.0-pre.1"
-
-"@polymer/marked-element@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@polymer/marked-element/-/marked-element-0.0.3.tgz#5ffc9a2b03766cf4a1a1f9f612fd28717bea663a"
-  dependencies:
-    "@polymer/polymer" "^1.2.5-npm-test.2"
-    marked "~0.3.3"
 
 "@polymer/paper-behaviors@^3.0.0-pre.1":
   version "3.0.0-pre.1"
@@ -164,7 +154,7 @@
     "@polymer/iron-a11y-keys-behavior" "^3.0.0-pre.1"
     "@polymer/polymer" "^3.0.0-pre.1"
 
-"@polymer/paper-styles@^0.0.3", "@polymer/paper-styles@^3.0.0-pre.1":
+"@polymer/paper-styles@3.0.0-pre.1", "@polymer/paper-styles@^3.0.0-pre.1":
   version "3.0.0-pre.1"
   resolved "https://registry.yarnpkg.com/@polymer/paper-styles/-/paper-styles-3.0.0-pre.1.tgz#333fd04f5052733ebc10e3a08a59f07b5586af13"
   dependencies:
@@ -172,19 +162,12 @@
     "@polymer/iron-flex-layout" "^3.0.0-pre.1"
     "@polymer/polymer" "^3.0.0-pre.1"
 
-"@polymer/polymer@3.0.0-pre.1", "@polymer/polymer@^1.2.5-npm-test.2", "@polymer/polymer@^3.0.0-pre.1":
+"@polymer/polymer@3.0.0-pre.1", "@polymer/polymer@^3.0.0-pre.1":
   version "3.0.0-pre.1"
   resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-3.0.0-pre.1.tgz#9fc26b5259aad9265f324ced02de715991d2eabe"
   dependencies:
     "@webcomponents/shadycss" "^1.0.0"
     "@webcomponents/webcomponentsjs" "^1.0.0"
-
-"@polymer/prism-element@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@polymer/prism-element/-/prism-element-0.0.3.tgz#071c15b70011ad97f66c80ddf0aa38906d162501"
-  dependencies:
-    "@polymer/polymer" "^1.2.5-npm-test.2"
-    prismjs-package "*"
 
 "@webcomponents/shadycss@^1.0.0":
   version "1.0.6"
@@ -614,9 +597,9 @@ caw@^1.0.1:
     object-assign "^3.0.0"
     tunnel-agent "^0.4.0"
 
-chalk@2.1.0, chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3, chalk@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.1.0.tgz#ac5becf14fa21b99c6c92ca7a7d7cfd5b17e743e"
+chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3, chalk@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.2.0.tgz#477b3bf2f9b8fd5ca9e429747e37f724ee7af240"
   dependencies:
     ansi-styles "^3.1.0"
     escape-string-regexp "^1.0.5"
@@ -900,7 +883,7 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-dateformat@^2.0.0:
+dateformat@2.2.0, dateformat@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-2.2.0.tgz#4065e2013cf9fb916ddfd82efb506ad4c6769062"
 
@@ -1777,7 +1760,7 @@ gulp-tap@^1.0.1:
   dependencies:
     through2 "^2.0.3"
 
-gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.6, gulp-util@^3.0.8, gulp-util@~3.0.7:
+gulp-util@3.0.8, gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.6, gulp-util@^3.0.8, gulp-util@~3.0.7:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
   dependencies:
@@ -2690,10 +2673,6 @@ map-stream@^0.1.0, map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
 
-marked@~0.3.3:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
-
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -3453,12 +3432,6 @@ pretty-hrtime@^1.0.0:
 prettysize@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/prettysize/-/prettysize-0.1.0.tgz#38ee534e2d298bc945fb7243203dd873cefc9679"
-
-prismjs-package@*:
-  version "0.7.30"
-  resolved "https://registry.yarnpkg.com/prismjs-package/-/prismjs-package-0.7.30.tgz#a3bfa3ca34175744dd7412eca3809707aff5eebd"
-  dependencies:
-    lodash "^4.17.4"
 
 process-nextick-args@^1.0.6, process-nextick-args@~1.0.6:
   version "1.0.7"
@@ -4423,10 +4396,6 @@ ware@^1.2.0:
   resolved "https://registry.yarnpkg.com/ware/-/ware-1.3.0.tgz#d1b14f39d2e2cb4ab8c4098f756fe4b164e473d4"
   dependencies:
     wrap-fn "^0.1.0"
-
-webcomponents.js@^0.7.20:
-  version "0.7.24"
-  resolved "https://registry.yarnpkg.com/webcomponents.js/-/webcomponents.js-0.7.24.tgz#2116fbfa1468ec416a7befdaa333e1d118f69c04"
 
 weinre@^2.0.0-pre-I0Z7U9OV:
   version "2.0.0-pre-I0Z7U9OV"

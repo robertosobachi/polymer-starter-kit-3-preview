@@ -7,7 +7,7 @@ import "../../../node_modules/@polymer/app-layout/app-scroll-effects/app-scroll-
 import "../../../node_modules/@polymer/app-layout/app-toolbar/app-toolbar.js";
 import "../../../node_modules/@polymer/app-route/app-location.js";
 import "../../../node_modules/@polymer/app-route/app-route.js";
-import "../../../node_modules/@polymer/iron-pages/iron-pages.js";
+import "../../../node_modules/@polymer/iron-lazy-pages/iron-lazy-pages.js";
 import "../../../node_modules/@polymer/iron-selector/iron-selector.js";
 import "../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js";
 
@@ -82,7 +82,7 @@ export class MyApp extends PolymerElement {
                   </app-toolbar>
                 </app-header>
 
-                <iron-pages
+                <iron-lazy-pages
                     selected="[[page]]"
                     attr-for-selected="name"
                     fallback-selection="view404"
@@ -91,7 +91,7 @@ export class MyApp extends PolymerElement {
                   <my-view2 name="view2"></my-view2>
                   <my-view3 name="view3"></my-view3>
                   <my-view404 name="view404"></my-view404>
-                </iron-pages>
+                </iron-lazy-pages>
               </app-header-layout>
             </app-drawer-layout>`;
   }
