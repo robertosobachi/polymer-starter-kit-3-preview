@@ -11,3 +11,4 @@ src/images
 src/styles
 .DS_Store
 .firebaserc
+.yarn-error.log
