@@ -6,6 +6,7 @@ export default class MyView1 extends PolymerElement {
   static get template() {
     return `
       <link rel="stylesheet" href="/src/components/my-view1/my-view1.css">
+      <link rel="stylesheet" href="/src/components/shared-styles/shared.css">
 
       <div class="card">
         <div class="circle">1</div>

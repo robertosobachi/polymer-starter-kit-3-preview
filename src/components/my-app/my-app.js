@@ -7,7 +7,7 @@ import "../../../node_modules/@polymer/app-layout/app-scroll-effects/app-scroll-
 import "../../../node_modules/@polymer/app-layout/app-toolbar/app-toolbar.js";
 import "../../../node_modules/@polymer/app-route/app-location.js";
 import "../../../node_modules/@polymer/app-route/app-route.js";
-import "../../../node_modules/@polymer/iron-lazy-pages/iron-lazy-pages.js";
+import "../../../node_modules/@polymer/iron-pages/iron-pages.js";
 import "../../../node_modules/@polymer/iron-selector/iron-selector.js";
 import "../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js";
 
@@ -16,7 +16,6 @@ import "../my-view1/my-view1.js";
 import "../my-view2/my-view2.js";
 import "../my-view3/my-view3.js";
 import "../my-view404/my-view404.js";
-
 
 export class MyApp extends PolymerElement {
 
@@ -82,7 +81,7 @@ export class MyApp extends PolymerElement {
                   </app-toolbar>
                 </app-header>
 
-                <iron-lazy-pages
+                <iron-pages
                     selected="[[page]]"
                     attr-for-selected="name"
                     fallback-selection="view404"
@@ -91,7 +90,7 @@ export class MyApp extends PolymerElement {
                   <my-view2 name="view2"></my-view2>
                   <my-view3 name="view3"></my-view3>
                   <my-view404 name="view404"></my-view404>
-                </iron-lazy-pages>
+                </iron-pages>
               </app-header-layout>
             </app-drawer-layout>`;
   }
@@ -142,18 +141,8 @@ export class MyApp extends PolymerElement {
 
   _pageChanged(page) {
     // Load page import on demand. Show 404 page if fails
-    var resolvedPageUrl =
-        this.resolveUrl('../my-' + page + '/my-' + page + '.html');
-    // Polymer.importHref(
-    //     resolvedPageUrl,
-    //     null,
-    //     this._showPage404.bind(this),
-    //     true);
   }
 
-  _showPage404() {
-    this.page = 'view404';
-  }
 }
 
 customElements.define('my-app', MyApp);
