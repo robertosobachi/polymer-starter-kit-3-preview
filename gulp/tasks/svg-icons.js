@@ -7,7 +7,7 @@ require('../utils/requires.js');
 
 const BEGIN_ICON_SET =
       '<link rel="import" href="../../../node_modules/@polymer/' +
-      'iron-iconset-svg/iron-iconset-svg.html">\n' +
+      'iron-iconset-svg/iron-iconset-svg.js">\n' +
       '<iron-iconset-svg name="' + config.customIconsName + '" size="24">\n';
 const END_ICON_SET = '\n</iron-iconset-svg>';
 
@@ -26,6 +26,6 @@ gulp.task('svg:icons', function(callback) {
             .pipe(replace(/^<.*<defs>/g, BEGIN_ICON_SET + '<defs>'))
             .pipe(replace('</defs></svg>', '</defs></svg>' + END_ICON_SET))
             .pipe(replace('svg--', ''))
-            .pipe(rename(config.customIconsName + '.html'))
+            .pipe(rename(config.customIconsName + '.js'))
             .pipe(gulp.dest(DEST_SVG_SET));
 });
