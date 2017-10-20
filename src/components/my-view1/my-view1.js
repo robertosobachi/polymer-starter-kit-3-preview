@@ -1,5 +1,5 @@
 import {Element as PolymerElement}
-    from "../../../node_modules/@polymer/polymer/polymer-element.js";
+    from '../../../node_modules/@polymer/polymer/polymer-element.js';
 
 export default class MyView1 extends PolymerElement {
   // Define a string template instead of a `<template>` element.
@@ -14,6 +14,10 @@ export default class MyView1 extends PolymerElement {
         <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
         <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
       </div>`;
+  }
+
+  connectedCallback() {
+    console.log('connectedCallback');
   }
 }
 
