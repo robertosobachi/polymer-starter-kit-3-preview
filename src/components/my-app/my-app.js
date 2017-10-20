@@ -7,7 +7,7 @@ import '../../../node_modules/@polymer/app-layout/app-scroll-effects/app-scroll-
 import '../../../node_modules/@polymer/app-layout/app-toolbar/app-toolbar.js';
 import '../../../node_modules/@polymer/app-route/app-location.js';
 import '../../../node_modules/@polymer/app-route/app-route.js';
-import '../../../node_modules/@polymer/iron-pages/iron-pages.js';
+import '../../../node_modules/@polymer/iron-lazy-pages/iron-lazy-pages.js';
 import '../../../node_modules/@polymer/iron-selector/iron-selector.js';
 import '../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js';
 
@@ -79,28 +79,28 @@ export class MyApp extends PolymerElement {
             <paper-icon-button icon="my-icons:menu" drawer-toggle></paper-icon-button>
             <div main-title>My App</div>
           </app-toolbar>
-        </app-header>
+      </app-header>
 
-        <iron-pages
-            selected="[[page]]"
-            attr-for-selected="name"
-            fallback-selection="view404"
-            role="main">
-          <template is="dom-if" name="view1" restamp>
-            <my-view1></my-view1>
-          </template
-          <template is="dom-if" name="view2" restamp>
-            <my-view2></my-view2>
-          </template>
-          <template is="dom-if" name="view3" restamp>
-            <my-view3></my-view3>
-          <template>
-          <template is="dom-if" name="view404" restamp>
-            <my-view404></my-view404>
-          </template>
-        </iron-pages>
-      </app-header-layout>
-    </app-drawer-layout>`;
+      <iron-lazy-pages
+          selected="[[page]]"
+          attr-for-selected="data-route"
+          fallback-selection="view404"
+          role="main">
+        <template is="dom-if" data-route="view1">
+          <my-view1></my-view1>
+        </template>
+        <template is="dom-if" data-route="view2">
+          <my-view2></my-view2>
+        </template>
+        <template is="dom-if" data-route="view3">
+          <my-view3></my-view3>
+        <template>
+        <template is="dom-if" data-route="view404">
+          <my-view404></my-view404>
+        </template>
+      </iron-lazy-pages>
+    </app-header-layout>
+  </app-drawer-layout>`;
   }
 
   static get properties() {
