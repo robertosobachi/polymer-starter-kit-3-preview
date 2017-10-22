@@ -1,12 +1,7 @@
-bower_components/
 build/
 node_modules/
 src/elements/**/*.css
-src/elements/**/*-styles.html
-src/elements/**/*-script.html
 src/components/**/*.css
-src/components/**/*-styles.html
-src/components/**/*-script.html
 src/components/my-icons/
 src/images
 src/styles
