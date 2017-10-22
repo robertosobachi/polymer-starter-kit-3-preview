@@ -11,12 +11,6 @@ import '../../../node_modules/@polymer/iron-lazy-pages/iron-lazy-pages.js';
 import '../../../node_modules/@polymer/iron-selector/iron-selector.js';
 import '../../../node_modules/@polymer/paper-icon-button/paper-icon-button.js';
 
-// Views
-import '../my-view1/my-view1.js';
-import '../my-view2/my-view2.js';
-import '../my-view3/my-view3.js';
-import '../my-view404/my-view404.js';
-
 export class MyApp extends PolymerElement {
 
   // Define a string template instead of a `<template>` element.
@@ -86,18 +80,14 @@ export class MyApp extends PolymerElement {
           attr-for-selected="data-route"
           fallback-selection="view404"
           role="main">
-        <template is="dom-if" data-route="view1">
-          <my-view1></my-view1>
-        </template>
-        <template is="dom-if" data-route="view2">
-          <my-view2></my-view2>
-        </template>
-        <template is="dom-if" data-route="view3">
-          <my-view3></my-view3>
-        <template>
-        <template is="dom-if" data-route="view404">
-          <my-view404></my-view404>
-        </template>
+          <my-view1 data-route="view1" data-path="/src/components/my-view1/my-view1.js"
+          ></my-view1>
+          <my-view2 data-route="view2" data-path="/src/components/my-view2/my-view2.js"
+          ></my-view2>
+          <my-view3 data-route="view3" data-path="/src/components/my-view3/my-view3.js"
+          ></my-view3>
+          <my-view404 data-route="view404" data-path="/src/components/my-view404/my-view404.js"
+          ></my-view404>
       </iron-lazy-pages>
     </app-header-layout>
   </app-drawer-layout>`;
